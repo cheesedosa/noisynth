@@ -1,0 +1,278 @@
+<!--
+   index.html
+   
+   Copyright 2014 Nikhil <nikhlraman@yahoo.com>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>untitled</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	 <script src="qwerty-hancock.js"></script>
+ <script src="jquery.knob.js"></script>
+ <script src="synth2.js"></script>
+<link rel="stylesheet/less" type="text/css" href="synthstyle.less"/> 
+ <script src="less-1.7.5.min.js" type="text/javascript"></script>
+
+<!--
+<link rel="stylesheet" type="text/css" href="synthstyle.css"> 
+-->
+
+	 
+</head>
+
+<body>
+<div class="synth">
+<div class="oscillators">
+ <div class="oscillator">
+	<h1> Oscillator</h1>
+<div class="oscillatorType">
+<p>
+<input type='radio' name ='wavetype1' id="sine1" value='sine1' checked = 'checked'>
+<input type='radio' name ='wavetype1' id="square1" value='square'>
+<input type='radio' name ='wavetype1' id="sawtooth1" value='sawtooth'>
+<input type='radio' name ='wavetype1' id="triangle1" value='triangle'></br>
+<label for="sine1">Sin</label>
+<label for="square1">Sqr</label>
+<label for="sawtooth1">Saw</label>
+<label for="triangle1">Tri</label>
+</p>
+</div>
+ <div class="knob">
+      <h2>Attack</h2>
+      <input id="attack"
+             data-width="65"
+             data-angleOffset="-125"
+             data-angleArc="250"
+             data-fgColor="#4CB6FF"
+             data-bgColor="#004B7F"
+             value="10"
+             data-skin="tron"
+             data-min="0"
+             data-max="100">
+    </div>
+    <div class="knob">
+      <h2>Release</h2>
+      <input id="release"
+             data-width="65"
+             data-angleOffset="-125"
+             data-angleArc="250"
+             data-fgColor="#4CB6FF"
+             data-bgColor="#004B7F"
+             value="10"
+             data-min="0"
+             data-max="100">
+             
+     </div>
+     
+    <div class="knob">
+      <h2>Detune</h2>
+      <input id="detune"
+             data-width="65"
+             data-angleOffset="-125"
+             data-angleArc="250"
+             data-fgColor="#4CB6FF"
+             data-bgColor="#004B7F"
+             value="0"
+             data-min="0"
+             data-max="100">
+             
+     </div>
+     
+</div>
+<div class="oscillator">
+<h1>	Oscillator</h1>
+<div class="oscillatorType">
+<p>
+<input type='radio' name ='wavetype2' id="sine2" value='sine' checked = 'checked'>
+<input type='radio' name ='wavetype2' id="square2" value='square'>
+<input type='radio' name ='wavetype2' id="sawtooth2" value='sawtooth'>
+<input type='radio' name ='wavetype2' id="triangle2" value='triangle'></br>
+<label for="sine2">Sin</label>
+<label for="square2">Sqr</label>
+<label for="sawtooth2">Saw</label>
+<label for="triangle2">Tri</label>
+</p>
+</div>
+
+<div class="knob">
+      <h2>Attack</h2>
+      <input id="attack2"
+             data-width="65"
+             data-angleOffset="-125"
+             data-angleArc="250"
+             data-fgColor="#4CB6FF"
+             data-bgColor="#004B7F"
+             value="10"
+             data-min="0"
+             data-max="100">
+    </div>
+    <div class="knob">
+      <h2>Release</h2>
+      <input id="release2"
+             data-width="65"
+             data-angleOffset="-125"
+             data-angleArc="250"
+             data-fgColor="#4CB6FF"
+             data-bgColor="#004B7F"
+             value="10"
+             data-min="0"
+             data-max="100">
+             
+     </div>
+</div>
+</div>
+<div class="section2">
+<div class="filter">
+<h1>Filter</h1>
+
+<div class="filterToggle">
+	<input type="checkbox" id="filterswitch" name="filteron" class="switch"/>
+	<label for="filterswitch">On/Off</label>
+</div>
+</br>
+</br>
+	<div class="knob">
+      <h2>CutOff</h2>
+      <input id="cutoff"
+             data-width="65"
+             data-angleOffset="-125"
+             data-angleArc="250"
+             data-fgColor="#4CB6FF"
+             data-bgColor="#004B7F"
+             value="10"
+             data-min="0"
+             data-max="100">
+    </div>
+    <div class="knob">
+      <h2>Resonance</h2>
+      <input id="resonance"
+             data-width="65"
+             data-angleOffset="-125"
+             data-angleArc="250"
+             data-fgColor="#4CB6FF"
+             data-bgColor="#004B7F"
+             value="10"
+             data-min="0"
+             data-max="100">
+             
+     </div>
+ </div>
+ <div class="lfo">	 
+ <h1>LFO</h1>
+
+<div class="lfoType">	
+<input type='radio' name ='lfotype' id="sine3" value='sine' checked = 'checked'>
+<input type='radio' name ='lfotype' id="square3" value='square'>
+<input type='radio' name ='lfotype' id="sawtooth3" value='sawtooth'>
+<input type='radio' name ='lfotype' id="triangle3" value='triangle'></br>
+<label for="sine3">Sin</label>
+<label for="square3">Sqr</label>
+<label for="sawtooth3">Saw</label>
+<label for="triangle3">Tri</label>
+</div>
+
+</br>
+<div class="knob">
+      <h2>LFO Depth</h2>
+      <input id="lfodep"
+             data-width="65"
+             data-angleOffset="-125"
+             data-angleArc="250"
+             data-fgColor="#4CB6FF"
+             data-bgColor="#004B7F"
+             value="0"
+             data-min="0"
+             data-max="100">
+    </div>
+    <div class="knob">
+      <h2>LFO Rate</h2>
+      <input id="lforate"
+             data-width="65"
+             data-angleOffset="-125"
+             data-angleArc="250"
+             data-fgColor="#4CB6FF"
+             data-bgColor="#004B7F"
+             value="0"
+             data-min="0"
+             data-max="100">
+             
+     </div>
+</div>
+</div>
+<div class="delay">
+	<h1>Delay Effect</h1>
+	<div class="knob">
+	
+      <h2>Delay</h2>
+      <input id="delay"
+             data-width="65"
+             data-angleOffset="-125"
+             data-angleArc="250"
+             data-fgColor="#4CB6FF"
+             data-bgColor="#004B7F"
+             value="0"
+             data-min="0"
+             data-max="100">
+    </div>
+   
+   <div class="knob">
+      <h2>Feedback</h2>
+      <input id="feedback"
+             data-width="65"
+             data-angleOffset="-125"
+             data-angleArc="250"
+             data-fgColor="#4CB6FF"
+             data-bgColor="#004B7F"
+             value="0"
+             data-min="0"
+             data-max="100">
+    </div>     
+
+    
+      <div class="knob">
+      <h2>Wet Level</h2>
+      <input id="wet"
+             data-width="65"
+             data-angleOffset="-125"
+             data-angleArc="250"
+             data-fgColor="#4CB6FF"
+             data-bgColor="#004B7F"
+             value="0"
+             data-min="0"
+             data-max="100">
+             
+     </div>
+ </div>
+ </div>
+
+</br>
+<div class = "keyboardBox">
+ <div class ="keyboard" id="keyboard"></div>
+</div>
+</body>
+
+</html>
