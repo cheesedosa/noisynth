@@ -1,0 +1,135 @@
+//constants
+
+@synthBackground:  #13324C;
+@synthWidth: 800px;
+@synthHeight: 480px;
+@boxBackground: #13324C;
+@borderColor: #AB2FAB;
+
+body{
+  background: -webkit-linear-gradient(left top, red , blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, red, blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #AB2FAB, #13324C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #AB2FAB, #13324C); /* Standard syntax */
+}
+
+.knob {
+        float: left;
+        margin-right: 10px;
+        
+      }
+.oscillators{
+float: left;
+width: calc(@synthWidth * 0.3-2px);
+height: calc(@synthHeight - 2px);
+border-style: solid;
+border-width: 1px;
+border-color: @borderColor;
+}
+
+.oscillator{
+display:inline-block;
+width: calc(@synthWidth * 0.3-2px);
+height: calc(@synthHeight * 0.5-2px);
+
+
+
+}
+
+.section2{
+float: left;
+width: @synthWidth * 0.4;
+height: @synthHeight;
+border-color: @borderColor;
+}
+.filter,{
+float: left;
+width: calc(@synthWidth * 0.4-2px);
+height: calc(@synthHeight * 0.5-2px);
+border-style: solid;
+border-width: 1px;
+border-color: @borderColor;
+.knob {
+	float: left;
+    margin-right: 50px;
+	
+}
+}
+
+.lfo {
+
+width: calc(@synthWidth * 0.4-2px);
+height: calc(@synthHeight * 0.5-2px);
+float: left;
+border-style: solid;
+border-width: 1px;
+border-color: @borderColor;
+
+}
+
+.delay {
+display: inline-block;
+background: @synthBackground;
+border-style: solid;
+border-width: 1px;
+border-color: @borderColor;
+float: left;
+opacity: 0.8;
+width: calc(@synthWidth * 0.3-2px);
+height:calc(@synthHeight * 1-2px);
+.knob {
+       float: left;
+       align: center;
+        margin-right: 5px;
+        
+      }
+}
+
+
+.synth {
+background: @boxBackground;
+max-width: @synthWidth;
+height: @synthHeight;
+border-style: solid;
+border-width: 1px;
+border-color: #AB507D;
+margin-left: auto;
+margin-right: auto;
+}
+
+.keyboard{
+clear: both;
+}
+
+label {
+   font-size: 11px;
+   font-weight: bold;
+   margin-right: 3px;
+   color: #E0981A;
+   
+}
+
+
+//input[type="radio"]{visibility:hidden;}
+
+h2 {
+font-size: 15px;
+color: @borderColor;
+}
+
+h1 {
+color: #0F7F35;
+text-align: center;
+font-size: 20px;
+}
+
+.keyboardBox{
+max-width: @synthWidth;
+height: 144px;
+background: @boxBackground;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
